@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import landingimage from '../public/images/delivery.webp'
+
 
 export default function Home() {
   return (
@@ -14,7 +16,14 @@ export default function Home() {
           
         </div>
         <div className="col-span-6">
-
+        <Image
+        src={landingimage}
+        alt="Picture of the author"
+        // width={500} automatically provided
+        // height={500} automatically provided
+        // blurDataURL="data:..." automatically provided
+        // placeholder="blur" // Optional blur-up while loading
+      />
         </div>
       </div>
 
